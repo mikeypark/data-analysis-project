@@ -1,0 +1,27 @@
+# ── 원본 데이터 (용량 큼, 재다운로드 가능)
+data/raw/
+probe_out/raw/
+*.zip
+
+# ── 파생 데이터 중 큰 것
+data/interim/
+*.parquet.tmp
+
+# 집계 결과(data/processed/)는 커밋합니다. 재현에 필요하고 용량이 작습니다.
+
+# ── Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.python-version
+
+# ── Claude 인수인계 문서 (로컬 전용, 공개 저장소 제외)
+CLAUDE.md
+
+# ── 도구
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
